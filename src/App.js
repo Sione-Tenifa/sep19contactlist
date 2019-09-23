@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Container, Header, } from "semantic-ui-react";
+import Contacts from "./Contacts"
 
 class App extends Component {
   state = { 
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <Container>
         <Header as="h1">React Contact List</Header>
+        <Contacts contacts={this.state.contacts}/>
       </Container>
     );
   }
